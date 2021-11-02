@@ -1,0 +1,22 @@
+# Packages
+node_modules
+
+# Log files
+*.log
+yarn-error.log*
+
+# Env
+*.env*
+
+# Miscellaneous
+.idea
+.next
+.vercel
+.eslintcache
+schema.gql
+
+# Yarn v3
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
