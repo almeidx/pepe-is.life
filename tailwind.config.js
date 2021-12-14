@@ -1,7 +1,5 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
-  darkMode: false,
+  content: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
   theme: {
     fontFamily: {
       sans: ['"Noto Sans KR"', 'sans-serif'],
@@ -25,9 +23,6 @@ module.exports = {
         'icon members join',
       ],
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [require('@savvywombat/tailwindcss-grid-areas')],
 };
