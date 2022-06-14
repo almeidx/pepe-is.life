@@ -10,6 +10,7 @@ import Navbar from '../components/Navbar';
 import { useApollo } from '../graphql/client';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const apolloClient = useApollo(pageProps.initialApolloState);
 
   return (

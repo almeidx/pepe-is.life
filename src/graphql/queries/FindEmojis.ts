@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-import type { Snowflake } from 'discord-api-types';
+import type { Snowflake } from 'discord-api-types/globals';
 
 interface Emoji {
   animated: boolean;
