@@ -1,7 +1,6 @@
 {
   "name": "pepe-is.life",
   "homepage": "https://pepe-is.life",
-  "license": "ISC",
   "private": true,
   "scripts": {
     "build": "next build",
