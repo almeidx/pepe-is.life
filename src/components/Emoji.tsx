@@ -1,6 +1,5 @@
-import type { Snowflake } from 'discord-api-types/globals';
-
 import { emojiCdn } from '../utils/cdn';
+import type { Snowflake } from '../utils/constants';
 
 interface EmojiProps {
   animated: boolean;

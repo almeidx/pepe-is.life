@@ -1,8 +1,8 @@
-import type { Snowflake } from 'discord-api-types/globals';
 import Link from 'next/link';
 
 import useWindowDimensions from '../hooks/useWindowDimensions';
 import { guildIconCdn } from '../utils/cdn';
+import type { Snowflake } from '../utils/constants';
 
 interface GuildProps {
   icon: string;
