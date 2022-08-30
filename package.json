@@ -16,7 +16,7 @@
     "@savvywombat/tailwindcss-grid-areas": "^2.1.0",
     "deepmerge": "^4.2.2",
     "graphql": "^16.5.0",
-    "next": "^12.2.3",
+    "next": "^12.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tslib": "^2.4.0"
