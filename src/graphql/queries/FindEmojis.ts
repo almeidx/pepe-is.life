@@ -1,25 +1,24 @@
-import { gql } from '@apollo/client';
-
-import type { Snowflake } from '../../utils/constants';
+import { gql } from "@apollo/client";
+import type { Snowflake } from "../../utils/constants";
 
 interface Emoji {
-  animated: boolean;
-  id: Snowflake;
-  invite: string;
-  name: string;
+	animated: boolean;
+	id: Snowflake;
+	invite: string;
+	name: string;
 }
 
 export interface FindEmojis {
-  findEmojis: Emoji[];
+	findEmojis: Emoji[];
 }
 
 export default gql`
-  query findEmojis($query: String!, $other: Boolean! = false) {
-    findEmojis(query: $query, other: $other) {
-      animated
-      id
-      invite
-      name
-    }
-  }
+	query findEmojis($query: String!, $other: Boolean! = false) {
+		findEmojis(query: $query, other: $other) {
+			animated
+			id
+			invite
+			name
+		}
+	}
 `;

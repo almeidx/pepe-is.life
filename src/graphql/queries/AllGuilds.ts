@@ -1,41 +1,40 @@
-import { gql } from '@apollo/client';
-
-import type { Snowflake } from '../../utils/constants';
+import { gql } from "@apollo/client";
+import type { Snowflake } from "../../utils/constants";
 
 interface Guild {
-  emojiCount: number;
-  icon: string;
-  id: Snowflake;
-  invite: string;
-  name: string;
-  memberCount: number;
-  presenceCount: number;
+	emojiCount: number;
+	icon: string;
+	id: Snowflake;
+	invite: string;
+	memberCount: number;
+	name: string;
+	presenceCount: number;
 }
 
 export interface AllGuilds {
-  allOfficialGuilds: Guild[];
-  allOtherGuilds: Omit<Guild, 'emojiCount'>[];
+	allOfficialGuilds: Guild[];
+	allOtherGuilds: Omit<Guild, "emojiCount">[];
 }
 
 export default gql`
-  query {
-    allOfficialGuilds {
-      emojiCount
-      icon
-      id
-      invite
-      name
-      memberCount
-      presenceCount
-    }
+	query {
+		allOfficialGuilds {
+			emojiCount
+			icon
+			id
+			invite
+			name
+			memberCount
+			presenceCount
+		}
 
-    allOtherGuilds {
-      icon
-      id
-      invite
-      name
-      memberCount
-      presenceCount
-    }
-  }
+		allOtherGuilds {
+			icon
+			id
+			invite
+			name
+			memberCount
+			presenceCount
+		}
+	}
 `;
