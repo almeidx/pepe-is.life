@@ -4,6 +4,7 @@ import "../styles/global.css";
 import { ApolloProvider } from "@apollo/client";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import NextProgress from "next-progress";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { useApollo } from "../graphql/client";
@@ -19,6 +20,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 			</Head>
 
 			<Navbar />
+			<NextProgress color="#2ecc71" />
 			<Component {...pageProps} />
 			<Footer />
 		</ApolloProvider>
